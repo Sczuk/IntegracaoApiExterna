@@ -1,6 +1,6 @@
 package br.com.integracaoApiExterna.integracao_Api_Externa.controller;
 
-import br.com.integracaoApiExterna.integracao_Api_Externa.DTO.response.CambioResponse;
+import br.com.integracaoApiExterna.integracao_Api_Externa.DTO.response.cambioResponse.CambioResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,7 +14,7 @@ import java.time.LocalDate;
 public class ExternalApi {
 
     @GetMapping("/{moeda}/{data}")
-    public ResponseEntity<CambioResponse> getCambio(@PathVariable String cambio, @PathVariable LocalDate data){
+    public ResponseEntity<CambioResponse> getCambio(@PathVariable String moeda, @PathVariable LocalDate data){
         return null;
     }
 
