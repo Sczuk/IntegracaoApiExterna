@@ -1,4 +1,4 @@
-package br.com.integracaoApiExterna.integracao_Api_Externa.DTO.response.cambioResponse;
+package br.com.integracaoApiExterna.integracao_Api_Externa.DTO.response;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -10,8 +10,8 @@ import java.time.LocalDate;
 @Setter
 public class CambioResponse {
 
-    private String moeda;
-    private String data;
     private CotacaoResponse[] cotacoes;
+    private String moeda;
+    private LocalDate data;
 
 }

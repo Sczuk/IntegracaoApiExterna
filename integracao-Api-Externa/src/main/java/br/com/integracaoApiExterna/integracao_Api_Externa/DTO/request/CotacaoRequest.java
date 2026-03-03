@@ -1,18 +1,20 @@
-package br.com.integracaoApiExterna.integracao_Api_Externa.DTO.response;
+package br.com.integracaoApiExterna.integracao_Api_Externa.DTO.request;
 
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 @Getter
 @Setter
-public class CotacaoResponse {
+public class CotacaoRequest {
 
+    private int paridade_compra;
+    private int paridade_venda;
     private double cotacao_compra;
     private double cotacao_venda;
     private String data_hora_cotacao;
+    private String tipo_boletim;
 
 }
