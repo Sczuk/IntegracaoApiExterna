@@ -4,8 +4,8 @@ import java.time.LocalDate;
 
 public class CotacaoResponse {
 
-    private double compra;
-    private double venda;
-    private LocalDate date;
+    private double cotacao_compra;
+    private double cotacao_venda;
+    private String date_hora_cotacao;
 
 }

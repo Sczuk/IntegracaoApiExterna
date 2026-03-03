@@ -11,7 +11,7 @@ import java.time.LocalDate;
 public class CambioResponse {
 
     private String moeda;
-    private LocalDate date;
-    private CotacaoResponse cotacao;
+    private String data;
+    private CotacaoResponse[] cotacoes;
 
 }
